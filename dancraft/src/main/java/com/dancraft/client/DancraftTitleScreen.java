@@ -23,7 +23,7 @@ public class DancraftTitleScreen extends Screen {
     private static final int TEXTURE_SIZE = 736;
 
     public DancraftTitleScreen() {
-        super(Component.literal("Dancraft"));
+        super(Component.literal("Akame ga Craft"));
     }
 
     @Override
@@ -57,11 +57,10 @@ public class DancraftTitleScreen extends Screen {
         int imageX = (width - size) / 2;
         g.blit(BACKGROUND, imageX, 0, size, size, 0f, 0f, TEXTURE_SIZE, TEXTURE_SIZE, TEXTURE_SIZE, TEXTURE_SIZE);
 
-        // Logo provisório em texto (troque por uma textura quando tiver o logo pronto)
         g.pose().pushPose();
         g.pose().translate(20, height / 2 - 78, 0);
         g.pose().scale(3.0f, 3.0f, 1.0f);
-        g.drawString(font, "DANCRAFT", 0, 0, 0xFFE02020, true);
+        g.drawString(font, "AKAME GA CRAFT", 0, 0, 0xFFE02020, true);
         g.pose().popPose();
         g.drawString(font, "A Lenda da Dungeon", 22, height / 2 - 46, 0xFFD0D0D0, true);
 
